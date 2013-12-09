@@ -1,0 +1,29 @@
+{
+    "name": "asci/omnipay-saferpay",
+    "description": "Saferpay payment gateway for omnipay",
+    "type": "omnipay-gateway",
+    "keywords": ["omnipay", "payment", "gateway", "saferpay", "provider"],
+    "license": "Unlicense",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Ismail Asci",
+            "email": "ismail.asci@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Asci" : "src/" }
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "omnipay/omnipay": "1.*"
+    },
+    "require-dev": {
+        "guzzle/plugin-mock": "~3.1",
+        "mockery/mockery": "~0.7",
+        "phpunit/phpunit": "~3.7.16",
+        "silex/silex": "1.0.*@dev",
+        "squizlabs/php_codesniffer": "~1.4.4",
+        "twig/twig": "~1.12"
+    }
+}
