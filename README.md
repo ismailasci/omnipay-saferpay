@@ -1,9 +1,10 @@
 Saferpay Omnipay gateway
 ==============
 
-[Saferpay](http://saferpay.com/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
-
 [![Build Status](https://travis-ci.org/ismailasci/omnipay-saferpay.png?branch=master)](https://travis-ci.org/ismailasci/omnipay-saferpay)
+[![Total Downloads](https://poser.pugx.org/asci/omnipay-saferpay/downloads.png)](https://packagist.org/packages/asci/omnipay-saferpay)
+
+[Saferpay](http://saferpay.com/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
 
 >> Warning: Only works with omnipay 1.* versions for the moment
 
