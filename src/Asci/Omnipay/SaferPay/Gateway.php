@@ -28,6 +28,16 @@ class Gateway extends AbstractGateway
         return $this->setParameter('accountId', $value);
     }
 
+    public function getLangId()
+    {
+        return $this->getParameter('langId');
+    }
+
+    public function setLangId($value)
+    {
+        return $this->setParameter('langId', $value);
+    }
+
     public function getAutoClose()
     {
         return $this->getParameter('autoClose');
