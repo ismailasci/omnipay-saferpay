@@ -38,6 +38,16 @@ class Gateway extends AbstractGateway
         return $this->setParameter('langId', $value);
     }
 
+    public function getVtConfig()
+    {
+        return $this->getParameter('vtConfig');
+    }
+
+    public function setVtConfig($value)
+    {
+        return $this->setParameter('vtConfig', $value);
+    }
+
     public function getAutoClose()
     {
         return $this->getParameter('autoClose');
