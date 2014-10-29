@@ -33,4 +33,9 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         return $this->endpoint;
     }
+
+    public function sendData($data)
+    {
+        return null;
+    }
 }
