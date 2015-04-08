@@ -132,7 +132,6 @@ class AuthorizeRequest extends AbstractRequest
             'ACCOUNTID' => $this->getAccountId(),
             'AMOUNT' => $this->getAmount() * 100,
             'CURRENCY' => $this->getCurrency(),
-            'DESCRIPTION' => $this->getDescription(),
             'ORDERID' => $this->getOrderId(),
             'SUCCESSLINK' => $this->getReturnUrl(),
             'FAILLINK' => $this->getCancelUrl(),
@@ -150,6 +149,12 @@ class AuthorizeRequest extends AbstractRequest
             'LANGID' => $this->getLangId(),
             'DURATION' => $this->getDuration(),
         );
+
+        if (extension_loaded('mbstring')) {
+            $data['DESCRIPTION'] = mb_convert_encoding($this->getDescription(), 'HTML-ENTITIES', 'UTF-8');
+        } else {
+            $data['DESCRIPTION'] = $this->getDescription();
+        }
 
         return $data;
     }
