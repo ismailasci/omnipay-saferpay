@@ -94,6 +94,15 @@ class GatewayTest extends GatewayTestCase
         $this->assertTrue($response->isSuccessful());
     }
 
+    public function testCaptureSuccessLong()
+    {
+        $this->setMockHttpResponse('CaptureSuccessLong.txt');
+
+        $response = $this->gateway->capture()->send();
+
+        $this->assertTrue($response->isSuccessful());
+    }
+
     public function testCaptureFailure()
     {
         $this->setMockHttpResponse('CaptureFailure.txt');

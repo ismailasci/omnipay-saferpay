@@ -8,7 +8,7 @@ class CaptureResponse extends Response implements RedirectResponseInterface
 {
     public function isSuccessful()
     {
-        return $this->data === 'OK';
+        return 0 === strpos($this->data, 'OK');
     }
 
     public function getMessage()
