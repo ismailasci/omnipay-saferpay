@@ -4,15 +4,11 @@ namespace Asci\Omnipay\SaferPay\Message;
 
 class CaptureRequest extends AbstractRequest
 {
-    protected $endpoint = 'https://www.saferpay.com/hosting/PayCompleteV2.asp';
+    protected $endpoint = 'PayCompleteV2.asp';
 
     public function getData()
     {
         $data = array('ACCOUNTID' => $this->getAccountId(), 'ID' => $this->getTransactionReference());
-
-        if ($this->getTestMode()) {
-            $data['spPassword'] = 'XAjc3Kna';
-        }
 
         return $data;
     }
