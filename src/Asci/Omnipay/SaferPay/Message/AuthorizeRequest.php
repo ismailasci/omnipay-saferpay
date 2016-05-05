@@ -4,7 +4,7 @@ namespace Asci\Omnipay\SaferPay\Message;
 
 class AuthorizeRequest extends AbstractRequest
 {
-    protected $endpoint = 'https://www.saferpay.com/hosting/CreatePayInit.asp';
+    protected $endpoint = 'CreatePayInit.asp';
 
     public function getAutoClose()
     {
