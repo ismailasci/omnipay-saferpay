@@ -4,7 +4,7 @@ namespace Asci\Omnipay\SaferPay\Message;
 
 class CompleteAuthorizeRequest extends AbstractRequest
 {
-    protected $endpoint = 'https://www.saferpay.com/hosting/VerifyPayConfirm.asp';
+    protected $endpoint = 'VerifyPayConfirm.asp';
 
     public function getData()
     {
